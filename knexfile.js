@@ -4,7 +4,7 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://john:pass@postgres-6003ef84a63cac991f9bf0a4.c.6001421cc73ea88e8147c139.cycle.io:5432/postgres',
+    connection: process.env.DB_URL,
     migrations: {
       directory: './data/migrations'
     },
@@ -15,7 +15,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: 'postgres://john:pass@postgres-6003ef84a63cac991f9bf0a4.c.6001421cc73ea88e8147c139.cycle.io:5432/postgres',
+    connection: process.env.DB_URL,
     migrations: {
       directory: './data/migrations'
     },
