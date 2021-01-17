@@ -1,11 +1,10 @@
 // Update with your config settings.
-// postgres://john@database-600147e1c73ea88e8147c14b.c.6001421cc73ea88e8147c139.cycle.io:5432/postgres
 
 module.exports = {
 
   development: {
     client: 'pg',
-    connection: process.env.DATABASE_URL,
+    connection: 'postgres://john:pass@postgres-6003ef84a63cac991f9bf0a4.c.6001421cc73ea88e8147c139.cycle.io:5432/postgres',
     migrations: {
       directory: './data/migrations'
     },
@@ -16,7 +15,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL,
+    connection: 'postgres://john:pass@postgres-6003ef84a63cac991f9bf0a4.c.6001421cc73ea88e8147c139.cycle.io:5432/postgres',
     migrations: {
       directory: './data/migrations'
     },
